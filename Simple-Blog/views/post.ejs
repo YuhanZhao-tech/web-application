@@ -1,0 +1,13 @@
+<%- include("header.ejs") %>
+<form class="container" action="/blog-post" method="post">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Title</label>
+    <input name="title" class="form-control" id="exampleFormControlInput1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+    <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button class="btn btn-dark" type="submit">Make a Post</button>
+</form>
+<%- include("footer.ejs") %>

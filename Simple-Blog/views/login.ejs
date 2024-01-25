@@ -1,0 +1,25 @@
+<%- include("header.ejs") %>
+<form action="/login" method="post" class="container-sm">
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Username</label>
+    <input
+      type="text"
+      name="username"
+      class="form-control"
+      id="formGroupExampleInput"
+      placeholder="Example input placeholder"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Password</label>
+    <input
+      type="password"
+      name="password"
+      class="form-control"
+      id="formGroupExampleInput2"
+      placeholder="Another input placeholder"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary mb-3">Sign in</button>
+</form>
+<%- include("footer.ejs") %>

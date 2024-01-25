@@ -1,0 +1,11 @@
+<%- include("header.ejs") %>
+<div class="container">
+  <% if (locals.content) { %>
+    <% content.forEach((post) => { %>
+      <h1><%= post.title %></h1>
+      <p><%= post.post %></p>
+    <% }) %>
+  <% } %>
+  <a href="/blog-post" class="btn btn-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Make a Post</a>
+</div>
+<%- include("footer.ejs") %>
