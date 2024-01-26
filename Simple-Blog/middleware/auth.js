@@ -1,9 +1,14 @@
-import fs from "node:fs";
+import _ from "lodash";
 
-export default function auth(name, password) {
-
-    if (name != "aiden" || password != "abcd82661582") {
-        return false;
+export default function auth(userList, loginUser) {
+    var userAuth = {
+        permit: false
     }
-    return true;
+    for (var user of userList) {
+        if (_.isEqual(user, loginUser)) {
+            console.log("Correct");
+            userAuth.permit = true;
+        }
+    }
+    return userAuth.permit;
 }
