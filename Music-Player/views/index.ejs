@@ -2,8 +2,22 @@
 <div class="container">
 
   <div class="player">
-    <div class="cover"></div>
+    <div class="cover">
+      <div class="album1"></div>
+      <div class="album2" id="album2"></div>
+    </div>
     <img src="disc.png" alt="" class="disc">
+    <div class="control">
+      <span class="material-symbols-outlined control-button" id="prev">
+        skip_previous
+      </span>
+      <span class="material-symbols-outlined control-button" id="play">
+        play_arrow
+      </span>
+      <span class="material-symbols-outlined control-button" id="next">
+        skip_next
+      </span>
+    </div>
   </div>
 </div>
 <%- include("footer.ejs") %>

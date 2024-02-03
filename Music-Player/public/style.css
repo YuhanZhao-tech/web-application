@@ -15,6 +15,8 @@ body {
   /* -webkit-backdrop-filter: blur(20px);
   -webkit-backdrop-filter: brightness(60%); */
   z-index: 0;
+  -moz-transition : all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
   
 }
 
@@ -32,16 +34,36 @@ body {
 
 .cover:hover ~ .disc {
   left: -200px;
-  transition: 1.2s ease;
+  rotate: 360deg;
+  /* transition: 1.2s ease; */
 }
 
 .cover {
   position: fixed;
   height: 400px;
   width: 400px;
+  overflow: hidden;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.album1 {
+  height: 100%;
+  width: 100%;
   background-image: url("cover1.jpg");
   background-size: cover;
-  z-index: 999;
+}
+
+.album2 {
+  height: 100%;
+  width: 100%;
+  background-image: url("cover2.jpg");
+  background-size: cover;
+  position: relative;
+  top: -400px;
+  left: 400px;
+  -moz-transition : all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .disc {
@@ -51,4 +73,26 @@ body {
   top: 0;
   left: 0;
   z-index: 500;
+  transition: 1s ease;
+}
+
+.control {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.control-button {
+  padding: 10px 10px;
+  border-radius: 50px;
+  border: 2px solid white;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 25px;
+}
+
+.control-button:hover {
+  background-color: black;
+  transition: 0.5s ease;
 }
