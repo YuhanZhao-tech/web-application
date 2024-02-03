@@ -34,6 +34,7 @@ nextButton.addEventListener("click", () => {
         albumElement = document.getElementById(`album${currentAlbum}`);
         albumElement.style.left = 0;
         body.style.backgroundImage = `url('cover${currentAlbum}.jpg')`;
+        if (!song.paused) { song.pause() }
         loadAudio();
     }
 })
@@ -45,6 +46,7 @@ prevButton.addEventListener("click", () => {
         albumElement.style.left = 400 + "px";
         currentAlbum--;
         body.style.backgroundImage = `url('cover${currentAlbum}.jpg')`;
+        if (!song.paused) { song.pause() }
         loadAudio();
     }
 })
