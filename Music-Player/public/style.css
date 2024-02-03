@@ -8,7 +8,7 @@
 body {
   height: 100vh;
   /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
-  background-image: url("cover1.jpg");
+  background-image: url("cover0.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,25 +47,42 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.album1 {
+.album0 {
   height: 100%;
   width: 100%;
-  background-image: url("cover1.jpg");
+  background-image: url("cover0.jpg");
   background-size: cover;
+  z-index: 1;
 }
 
-.album2 {
-  height: 100%;
+.album {
   width: 100%;
-  background-image: url("cover2.jpg");
+  height: 100%;
+  
   background-size: cover;
-  position: relative;
-  top: -400px;
+  position: absolute;
+  top: 0px;
   left: 400px;
   -moz-transition : all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+  
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+#album1 {
+  background-image: url("cover1.jpg");
+  z-index: 2;
+}
+
+#album2 {
+  background-image: url("cover2.jpg");
+  z-index: 3;
+}
+
+#album3 {
+  background-image: url("cover3.jpg");
+  z-index: 4;
+}
 .disc {
   position: relative;
   height: 400px;
