@@ -46,7 +46,7 @@ header {
 
 .container {
     height: 100vh;
-    background-color: #1F2544;
+    background: linear-gradient(180deg, #1A1E35 0%, #372C4B 50%, #74404F 100%);
 }
 
 .planet {
