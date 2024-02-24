@@ -1,7 +1,7 @@
 # web-application
 
 1. Change directory to project
-cd Music-Player
+cd any-project-directory/
 
 2. Install npm modules using
 npm install
