@@ -10,3 +10,5 @@ npm install
 node index.js
 
 4. Open browser and go to localhost:3000/
+
+5. Inspect using dev tools
